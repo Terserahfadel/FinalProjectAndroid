@@ -28,7 +28,6 @@ public class Login {
 	@Given("user already open the app")
 	public void user_already_open_the_app() {
 		Mobile.startApplication('./APK/app-release.apk', true)
-	
 	}
 
 	@When("user is in homepage")
@@ -48,12 +47,14 @@ public class Login {
 
 	@When("user fill the email field with (.*) email")
 	public void user_fill_the_email_field_with_email(String email) {
-		if(email=='valid seller' || email=='valid') {
-			Mobile.setText(findTestObject('Login/input_email_login'), 'oktaapriyanti874@gmail.com', 0)
+		if(email=='valid seller') {
+			Mobile.setText(findTestObject('Login/input_email_login'), 'peppapig@gmail.com', 0)
 		}else if(email=='valid buyer') {
 			Mobile.setText(findTestObject('Login/input_email_login'), 'hi.julea@gmail.com', 0)
 		}else if(email=='empty') {
 			Mobile.setText(findTestObject('Login/input_email_login'), '', 0)
+		}else if(email=='valid') {
+			Mobile.setText(findTestObject('Login/input_email_login'), 'oktaapriyanti874@gmail.com', 0)
 		}else if(email=='incorrect email format') {
 			Mobile.setText(findTestObject('Login/input_email_login'), 'oktaapriyanti874gmail.com', 0)
 		}else if(email=='unregister') {
@@ -63,7 +64,7 @@ public class Login {
 	@When("user fill the password field with(.*) password")
 	public void user_fill_the_password_field_with_password(String password) {
 		if(password==' correct seller') {
-			Mobile.setText(findTestObject('Login/input_password_login'), 'oktacantik', 0)
+			Mobile.setText(findTestObject('Login/input_password_login'), 'peppapig123', 0)
 		}else if(password==' correct buyer') {
 			Mobile.setText(findTestObject('Login/input_password_login'), 'Bintang7*', 0)
 		}else if(password==' empty') {
@@ -88,6 +89,5 @@ public class Login {
 		}else if(result=='failed') {
 			Mobile.verifyElementVisible(findTestObject('Login/btn_masuk_login'), 0)
 		}
-	    
 	}
 }
