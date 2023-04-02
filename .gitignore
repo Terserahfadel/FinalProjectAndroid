@@ -14,3 +14,20 @@ build
 .classpath
 
 .project
+
+.cache/
+.settings/
+APK/
+Checkpoints/
+Data Files/
+Drivers/
+Include/config/
+Keywords/
+Plugins/
+Profiles
+Scripts/
+settings/
+Test Cases/
+Test Listeners/
+Test Suites/
+.gitignore
