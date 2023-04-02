@@ -15,24 +15,3 @@ build
 
 .project
 
-.cache/
-.settings/
-APK/
-Checkpoints/
-Data Files/
-Drivers/
-Include/config/
-Keywords/
-Plugins/
-Profiles
-Scripts/
-settings/
-Test Cases/
-Test Listeners/
-Test Suites/
-.gitignore
-appium.log
-build.gradle
-console.properties
-katalon-group2-android.prj
-README.md
