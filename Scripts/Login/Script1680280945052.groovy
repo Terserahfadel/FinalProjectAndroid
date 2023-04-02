@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('./app-release.apk', true)
+Mobile.startApplication('./APK/app-release.apk', true)
 
 Mobile.tap(findTestObject('Homepage/btn-akun'), 0)
 

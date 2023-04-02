@@ -31,3 +31,8 @@ Test Cases/
 Test Listeners/
 Test Suites/
 .gitignore
+appium.log
+build.gradle
+console.properties
+katalon-group2-android.prj
+README.md
