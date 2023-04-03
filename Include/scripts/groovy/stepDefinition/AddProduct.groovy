@@ -28,7 +28,7 @@ public class AddProduct {
 
 	@When("user tap + button")
 	public void user_tap_button() {
-		Mobile.startApplication('APK/app-release.apk', false)
+		//		Mobile.startApplication('APK/app-release.apk', false)
 		Mobile.tap(findTestObject('Homepage/btn_addproduct'), 0)
 	}
 
