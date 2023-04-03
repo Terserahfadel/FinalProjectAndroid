@@ -24,10 +24,10 @@ Feature: Edit Profile Mobile App
 
     Examples: 
       | case_id | Nama  | Nomor_HP		  | Result  |
-      | AEP01   | valid | valid         | success |
+      | AEP01   | buyer | valid         | success |
       | AEP02   | empty | valid         | failed  |
-      | AEP03   | valid | invalid1      | success |
-      | AEP04   | valid | invalid2      | success |
+      | AEP03   | buyer | invalid1      | success |
+      | AEP04   | buyer | invalid2      | success |
 
   Scenario: User want to change Password with input wrong Old Password
     When User in Akun Saya Page
