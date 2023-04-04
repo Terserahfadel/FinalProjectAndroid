@@ -2,19 +2,22 @@
 Feature: Add Product
 
   Background: 
-    Given user is in login page
-    When user fill the email field with "rossiemaulana@gmail.com"
-    And user fill the password field with "masuk123"
-    And user tap the Masuk button
-    Then user successfully login
+    Given user already open the app
+    When user is in homepage
+    And user tap the akun button
+    And user tap the masuk button
+    And user fill the email field with valid seller email
+    And user fill the password field with correct seller password
+    And user tap the masuk login button
+    Then user can successfully login
 
   Scenario Outline: User can success or failed to do the process
     When user tap + button
-    And user input product name with <name>
-    And user input product price with <price>
+    And user input product name with <name> product name
+    And user input product price with <price> product price
     And user select kategori
-    And user input location with <location>
-    And user input description with <description>
+    And user input location with <location> location
+    And user input description with <description> description
     And user insert product image
     And user tap terbitkan button
     Then user <result> add product
