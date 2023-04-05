@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>btn_daftar1</name>
+   <name>verify_daftar</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
@@ -11,16 +11,16 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>android.widget.Button</value>
-      <webElementGuid>79377586-f35b-46a7-9c22-2892231ebcee</webElementGuid>
+      <value>android.widget.TextView</value>
+      <webElementGuid>e51aac36-7bf5-4a67-b98c-f6f4fb770e02</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>index</name>
       <type>Main</type>
-      <value>14</value>
-      <webElementGuid>2638361e-95a7-4401-91b3-d71f0f7d08ed</webElementGuid>
+      <value>1</value>
+      <webElementGuid>d90d72ad-7e4e-4518-bfa3-997a470b48d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -28,160 +28,160 @@
       <name>text</name>
       <type>Main</type>
       <value>Daftar</value>
-      <webElementGuid>7c7e050c-cff4-4682-8f4e-0eb2ef02b065</webElementGuid>
+      <webElementGuid>8a45171a-a0ca-4033-868c-625f5c518861</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>id.binar.fp.secondhand:id/btn_register</value>
-      <webElementGuid>dabead3d-aa5e-4046-a055-06862b9f5f0a</webElementGuid>
+      <value>id.binar.fp.secondhand:id/tv_title_register</value>
+      <webElementGuid>35cfbd78-8c25-44f5-90c0-987c2d54dce0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>package</name>
       <type>Main</type>
       <value>id.binar.fp.secondhand</value>
-      <webElementGuid>85cd2b62-2d99-46e1-b1b4-4fcc3c1d5bd5</webElementGuid>
+      <webElementGuid>5fe5b48b-cd02-4c22-a4b0-009ff77615b7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>4b88e65e-dc65-4a5b-bd74-25f4c2b337d0</webElementGuid>
+      <webElementGuid>247855f2-36e2-443d-8b6d-584785e44d39</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>ecaf028a-a17e-48ed-8c23-d78758a7af5b</webElementGuid>
+      <webElementGuid>da2f10ba-b31c-4b3e-8bc4-cbd2e1feb3a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>clickable</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>1c164935-764a-43e8-b792-8aeed6c4b8b2</webElementGuid>
+      <value>false</value>
+      <webElementGuid>d7a289cc-4232-4e2f-85d3-a4b38f00d7b8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>9811228e-5d29-4b8f-98e5-aea28e914c51</webElementGuid>
+      <webElementGuid>5221789f-8ac5-40a9-aa6b-b8f473fe473d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>focusable</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>0395932b-3333-44a6-b62d-be536fc4aec1</webElementGuid>
+      <value>false</value>
+      <webElementGuid>e888767d-d39b-454a-bcd2-56c44752fb59</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>e067b63a-438a-4d9d-bca0-d3f58f033c2b</webElementGuid>
+      <webElementGuid>9f146164-687c-4bcc-8ff4-7e6099f4e5fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>5be98cfc-9de3-4ca3-a0fb-4a00a8b00298</webElementGuid>
+      <webElementGuid>f19cb543-dca3-45ee-931b-ac92c7c4614a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>long-clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>9945eaa3-9734-428a-8a58-13b14b6ced2b</webElementGuid>
+      <webElementGuid>a7130687-e9f3-4b85-810e-4f331eb65772</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>38b7c098-bf8d-441d-98f1-65aaa2d45f08</webElementGuid>
+      <webElementGuid>8b2aaa0d-85c2-43b1-bafa-e61d9c157470</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>db1440e6-a848-42b1-8c57-fa06ab5ae631</webElementGuid>
+      <webElementGuid>95b47647-26e4-4245-b9d0-88e958e44002</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>x</name>
       <type>Main</type>
-      <value>42</value>
-      <webElementGuid>552c64e4-5c39-447e-9967-3239b9d4ab26</webElementGuid>
+      <value>56</value>
+      <webElementGuid>4f503cb2-bd03-401d-9ac5-34fadc453401</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>y</name>
       <type>Main</type>
-      <value>1449</value>
-      <webElementGuid>0a295e69-5784-476f-81a7-16e24c7ec1b3</webElementGuid>
+      <value>460</value>
+      <webElementGuid>20341bcc-da19-4575-a474-b3b528d83653</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>width</name>
       <type>Main</type>
-      <value>996</value>
-      <webElementGuid>79d6a508-cf51-4a5f-88a0-498f4dbaed8b</webElementGuid>
+      <value>1328</value>
+      <webElementGuid>48110495-1d34-49f0-bfd6-ba66fafb6f7a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>height</name>
       <type>Main</type>
-      <value>146</value>
-      <webElementGuid>a249fdb9-2928-42cf-bd28-b4fc48b9ae13</webElementGuid>
+      <value>157</value>
+      <webElementGuid>e36751e6-f29b-4c69-9de7-e62a4d10afe6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>bounds</name>
       <type>Main</type>
-      <value>[42,1449][1038,1595]</value>
-      <webElementGuid>38fd2426-2fa3-45ce-9f23-97da316864f5</webElementGuid>
+      <value>[56,460][1384,617]</value>
+      <webElementGuid>627a9d73-55fa-41be-92de-4b7e44456842</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>5fb5d06f-2ce3-4226-8f31-b752414b937e</webElementGuid>
+      <webElementGuid>6491dbff-fe00-438a-b7bc-c2d0d0f63d5c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[2]/android.view.ViewGroup[1]/android.widget.Button[1]</value>
-      <webElementGuid>90f6e1fd-580c-4515-99f4-07d53882276c</webElementGuid>
+      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.widget.TextView[1]</value>
+      <webElementGuid>9ce3e9f2-9007-4fbf-a903-97d89ab76c21</webElementGuid>
    </webElementProperties>
-   <locator>//*[@class = 'android.widget.Button' and (@text = 'Daftar' or . = 'Daftar') and @resource-id = 'id.binar.fp.secondhand:id/btn_register']</locator>
-   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <locator>id.binar.fp.secondhand:id/tv_title_register</locator>
+   <locatorStrategy>ID</locatorStrategy>
 </MobileElementEntity>
