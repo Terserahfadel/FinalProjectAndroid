@@ -1,3 +1,4 @@
+@Login
 Feature: Login Feature
 
   Scenario Outline: User can login using correct credentials
