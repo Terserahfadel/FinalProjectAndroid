@@ -88,5 +88,4 @@ public class bidproduct {
 	public void user_can_see_Success_notification() {
 		Mobile.verifyElementVisible(findTestObject('Detail Page Android/notif_berhasil'),0)
 	}
-
 }
