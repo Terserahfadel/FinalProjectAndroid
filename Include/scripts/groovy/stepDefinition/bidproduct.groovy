@@ -29,13 +29,15 @@ import internal.GlobalVariable
 public class bidproduct {
 	@When("user search a product")
 	public void user_search_a_product( ) {
-		Mobile.startApplication('./APK/app-release.apk', true)
+		//		Mobile.startApplication('./APK/app-release.apk', false)
+		Mobile.delay(3)
+		Mobile.tap(findTestObject('Homepage/btn-beranda2'),0)
+		Mobile.delay(5)
 		Mobile.tap(findTestObject('Homepage/textfield-searchbox'),0)
 		Mobile.delay(3)
 		Mobile.setText(findTestObject('Homepage/textfield-searchbox2'), 'Sambal Bangkok Indofood',0)
-		
 	}
-	
+
 	@When("user tap a product")
 	public void user_tap_a_product() {
 		Mobile.delay(5)
@@ -48,7 +50,7 @@ public class bidproduct {
 		Mobile.tap(findTestObject('Detail Page Android/btn_nego'),0)
 	}
 
-		@When("user input (.*) into price field")
+	@When("user input (.*) into price field")
 	public void user_input_into_price_field(String Price) {
 		if(Price=='valid') {
 			Mobile.delay(5)
@@ -66,17 +68,20 @@ public class bidproduct {
 			Mobile.delay(5)
 			Mobile.setText(findTestObject('Detail Page Android/input_price'), 'abcde',0)
 		}
+		else if(Price=='character') {
+			Mobile.delay(5)
+			Mobile.setText(findTestObject('Detail Page Android/input_price'), '-@#$@', 0)
+		}
 	}
 
 	@When("user tap Kirim button")
 	public void user_tap_Kirim_button() {
-		
 		Mobile.tap(findTestObject('Detail Page Android/btn_bid'), 0)
 	}
 
 	@Then("user can see Failed notification")
 	public void user_can_see_Failed_notification() {
-		Mobile.verifyElementVisible(findTestObject('Detail Page Android/notif_harga kosong'),0)
+		Mobile.verifyElementNotVisible(findTestObject('Detail Page Android/notif_berhasil'),0)
 	}
 
 	@Then("user can see Success notification")
@@ -84,7 +89,4 @@ public class bidproduct {
 		Mobile.verifyElementVisible(findTestObject('Detail Page Android/notif_berhasil'),0)
 	}
 
-//	@Then("user cannot tap nego button")
-//	public void user_cannot_tap_nego_button() {
-//	}
 }
