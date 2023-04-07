@@ -45,12 +45,12 @@ import groovy.json.StringEscapeUtils
 
 public class editproduct {
 
-//	@When("user tap akun button")
-//	public void user_tap_akun_button() {
-//		//		Mobile.startApplication('APK/app-release.apk', false)
-//		Mobile.tap(findTestObject('Homepage/btn-akun'), 0)
-//	}
-//	
+	//	@When("user tap akun button")
+	//	public void user_tap_akun_button() {
+	//		//		Mobile.startApplication('APK/app-release.apk', false)
+	//		Mobile.tap(findTestObject('Homepage/btn-akun'), 0)
+	//	}
+	//
 	@When("user tap daftar jual saya button")
 	public void user_tap_daftar_jual_saya_button() {
 		Mobile.tap(findTestObject('Akun/btn-daftar jual saya'), 0)
@@ -58,76 +58,76 @@ public class editproduct {
 
 	@When("user tap product that has been published")
 	public void user_tap_product_that_has_been_published() {
-		Mobile.tap(findTestObject('Daftar Jual Saya/product-Sambal Bangkok Indofood'), 0)
+		Mobile.tap(findTestObject('Ubah Produk/Produk_Edit'), 0)
 	}
 
-	@When("user input product name with (.*) product name")
-	public void user_input_product_name_with_product_name(String name) {
+	@When("user edit product name with (.*) product name")
+	public void user_edit_product_name_with_product_name(String name) {
 		if (name=='valid') {
-			Mobile.setText(findTestObject('Add Product/Input_Nama Produk'), 'Sambal Bangkok Indofood', 0)
+			Mobile.setText(findTestObject('Ubah Produk/Edit_Nama Produk'), 'Sambal Bangkok Indofood', 0)
 		}
 		else if(name=='empty') {
-			Mobile.setText(findTestObject('Add Product/Input_Nama Produk'), '', 0)
+			Mobile.setText(findTestObject('Ubah Produk/Edit_Nama Produk'), '', 0)
 		}
 	}
 
-	@When("user input product price with (.*) product price")
-	public void user_input_product_price_with_product_price(String harga) {
+	@When("user edit product price with (.*) product price")
+	public void user_edit_product_price_with_product_price(String harga) {
 		if (harga=='valid') {
-			Mobile.setText(findTestObject('Add Product/Input_Harga Produk'), '14000', 0)
+			Mobile.setText(findTestObject('Ubah Produk/Edit_Harga Produk'), '14000', 0)
 		}
 		else if (harga=='empty') {
-			Mobile.setText(findTestObject('Add Product/Input_Harga Produk'), '', 0)
+			Mobile.setText(findTestObject('Ubah Produk/Edit_Harga Produk'), '', 0)
 		}
 	}
 
 	@When("user select kategori")
 	public void user_select_kategori() {
-		Mobile.tap(findTestObject('Add Product/Dropdown_Kategori'), 0)
-		Mobile.tap(findTestObject('Add Product/Input_Lokasi Produk'),0)
+		Mobile.tap(findTestObject('Ubah Produk/Edit_Dropdown_Kategori'), 0)
+		Mobile.tap(findTestObject('Ubah Produk/Edit_Lokasi Produk'),0)
 	}
 
-	@When("user input location with (.*) location")
+	@When("user edit location with (.*) location")
 	public void user_input_location_location(String lokasi) {
 		if (lokasi=='valid') {
-			Mobile.setText(findTestObject('Add Product/Input_Lokasi Produk'), 'Banten', 0)
+			Mobile.setText(findTestObject('Ubah Produk/Edit_Lokasi Produk'), 'Banten', 0)
 		}
 		else if (lokasi=='empty') {
-			Mobile.setText(findTestObject('Add Product/Input_Lokasi Produk'), '', 0)
+			Mobile.setText(findTestObject('Ubah Produk/Edit_Lokasi Produk'), '', 0)
 		}
 	}
 
-	@When("user input description with (.*) description")
+	@When("user edit description with (.*) description")
 	public void user_input_description_with_description(String deskripsi) {
 		if (deskripsi=='valid') {
-			Mobile.setText(findTestObject('Add Product/Input_Deskripsi'), 'pedas, sepedas mulut tetangga', 0)
+			Mobile.setText(findTestObject('Ubah Produk/Edit_Deskripsi'), 'pedas, sepedas mulut tetangga', 0)
 		}
 		else if (deskripsi=='empty') {
-			Mobile.setText(findTestObject('Add Product/Input_Deskripsi'), '', 0)
+			Mobile.setText(findTestObject('Ubah Produk/Edit_Deskripsi'), '', 0)
 		}
 	}
 
-	@When("user insert product image")
-	public void user_insert_product_image() {
-		Mobile.tap(findTestObject('Add Product/btn_tambah foto'), 0)
-		Mobile.tap(findTestObject('Add Product/Button_Galeri'), 0)
-		Mobile.tap(findTestObject('Add Product/btn_pilih gambar'), 0)
-	}
+	//	@When("user insert product image")
+	//	public void user_insert_product_image() {
+	//		Mobile.tap(findTestObject('Ubah Produk/Button_Edit_Foto Produk'), 0)
+	//		Mobile.tap(findTestObject('Ubah Produk/Button_Edit Galeri'), 0)
+	//		Mobile.tap(findTestObject('Ubah Produk/btn_pilih gambar'), 0)
+	//	}
 
 	@When("user tap terbitkan button")
 	public void user_tap_terbitkan_button() {
-		Mobile.tap(findTestObject('Add Product/Button_Terbitkan'), 0)
+		Mobile.tap(findTestObject('Ubah Produk/Button_Perbarui Produk'), 0)
 	}
 
-	@Then("user successfully add product")
-	public void user_successfully_add_product() {
+	@Then("user successfully edit product")
+	public void user_successfully_Edit_product() {
 		Mobile.delay(10)
 		Mobile.verifyElementVisible(findTestObject('Daftar Jual Saya/product-Sambal Bangkok Indofood'), 0)
 		Mobile.delay(5)
 	}
 
-	@Then("user failed add product")
-	public void user_failed_add_product() {
-		Mobile.verifyElementVisible(findTestObject('Add Product/Button_Terbitkan'), 0)
+	@Then("user failed edit product")
+	public void user_failed_edit_product() {
+		Mobile.verifyElementVisible(findTestObject('Ubah Produk/Button_Perbaharui Produk'), 0)
 	}
 }
