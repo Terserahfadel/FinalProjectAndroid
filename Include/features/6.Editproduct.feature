@@ -12,16 +12,15 @@ Feature: Edit Product
     Then user can successfully login
 
   Scenario Outline: User can success or failed to do the process
-    #When user tap akun button
     When user tap daftar jual saya button
     And user tap product that has been published
     And user edit product name with <name> product name
     And user edit product price with <price> product price
-    And user select kategori
+    And user edit kategori
     And user edit location with <location> location
     And user edit description with <description> description
-    #And user insert product image
-    And user tap terbitkan button
+    And user insert product image
+    And user tap perbarui button
     Then user <result> edit product
 
     Examples: 
