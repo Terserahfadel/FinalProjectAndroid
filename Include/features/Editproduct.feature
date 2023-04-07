@@ -15,14 +15,14 @@ Feature: Edit Product
     #When user tap akun button
     When user tap daftar jual saya button
     And user tap product that has been published
-    And user input product name with <name> product name
-    And user input product price with <price> product price
+    And user edit product name with <name> product name
+    And user edit product price with <price> product price
     And user select kategori
-    And user input location with <location> location
-    And user input description with <description> description
-    And user insert product image
+    And user edit location with <location> location
+    And user edit description with <description> description
+    #And user insert product image
     And user tap terbitkan button
-    Then user <result> add product
+    Then user <result> edit product
 
     Examples: 
       | case ID | name  | price | location | description | result       |
