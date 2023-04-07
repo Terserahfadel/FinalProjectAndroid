@@ -6,8 +6,8 @@ Feature: Edit Profile Mobile App
     When user is in homepage
     And user tap the akun button
     And user tap the masuk button
-    And user fill the email field with valid buyer email
-    And user fill the password field with correct buyer password
+    And user fill the email field with valid seller email
+    And user fill the password field with correct seller password
     And user tap the masuk login button
 
   Scenario Outline: User can success and failed do the Edit Profile process
