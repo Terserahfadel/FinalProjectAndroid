@@ -11,7 +11,7 @@ Feature: Edit Product
     And user tap the masuk login button
     Then user can successfully login
 
-  Scenario Outline: User can success or failed to do the process
+  Scenario Outline: User can success or failed to do the Edit Product process
     When user tap daftar jual saya button
     And user tap product that has been published
     And user edit product name with <name> product name
