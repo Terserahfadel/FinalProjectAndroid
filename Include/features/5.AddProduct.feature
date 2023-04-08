@@ -11,7 +11,7 @@ Feature: Add Product
     And user tap the masuk login button
     Then user can successfully login
 
-  Scenario Outline: User can success or failed to do the process
+  Scenario Outline: User can success or failed to do the Add Product process
     When user tap + button
     And user input product name with <name> product name
     And user input product price with <price> product price

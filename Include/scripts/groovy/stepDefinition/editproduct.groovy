@@ -54,7 +54,7 @@ public class editproduct {
 	@When("user tap product that has been published")
 	public void user_tap_product_that_has_been_published() {
 		Mobile.delay(20)
-		Mobile.tap(findTestObject('Edit Product/Produk_Edit'), 0)
+		Mobile.tap(findTestObject('Daftar Jual Saya/product-Sambal Bangkok Indofood'), 0)
 	}
 
 	@When("user edit product name with (.*) product name")
@@ -79,17 +79,20 @@ public class editproduct {
 
 	@When("user edit kategori")
 	public void user_edit_kategori() {
-		Mobile.tap(findTestObject('Edit Product/Edit_Dropdown_Kategori'), 0)
+		Mobile.tap(findTestObject('Edit Product/btn-dropdown kategori'), 0)
 		Mobile.tap(findTestObject('Edit Product/Edit_Lokasi Produk'),0)
+		Mobile.hideKeyboard()
 	}
 
 	@When("user edit location with (.*) location")
 	public void user_input_location_location(String lokasi) {
 		if (lokasi=='valid') {
 			Mobile.setText(findTestObject('Edit Product/Edit_Lokasi Produk'), 'Banten', 0)
+			Mobile.hideKeyboard()
 		}
 		else if (lokasi=='empty') {
 			Mobile.setText(findTestObject('Edit Product/Edit_Lokasi Produk'), '', 0)
+			Mobile.hideKeyboard()
 		}
 	}
 

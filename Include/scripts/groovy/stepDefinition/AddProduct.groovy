@@ -28,7 +28,6 @@ public class AddProduct {
 
 	@When("user tap + button")
 	public void user_tap_button() {
-		//		Mobile.startApplication('APK/app-release.apk', false)
 		Mobile.tap(findTestObject('Homepage/btn_addproduct'), 0)
 	}
 
@@ -56,15 +55,18 @@ public class AddProduct {
 	public void user_select_kategori() {
 		Mobile.tap(findTestObject('Add Product/Dropdown_Kategori'), 0)
 		Mobile.tap(findTestObject('Add Product/Input_Lokasi Produk'),0)
+		Mobile.hideKeyboard()
 	}
 
 	@When("user input location with (.*) location")
 	public void user_input_location_location(String lokasi) {
 		if (lokasi=='valid') {
 			Mobile.setText(findTestObject('Add Product/Input_Lokasi Produk'), 'Banten', 0)
+			Mobile.hideKeyboard()
 		}
 		else if (lokasi=='empty') {
 			Mobile.setText(findTestObject('Add Product/Input_Lokasi Produk'), '', 0)
+			Mobile.hideKeyboard()
 		}
 	}
 
