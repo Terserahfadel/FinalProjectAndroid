@@ -27,7 +27,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 features = "Include/features",
 glue = "stepDefinition",
-tags = "@editproduct",
+tags = "@Register, @Login, @Edit_Profile_Seller, @Edit_Profile_Buyer, @addproduct, @editproduct, @Bidfarhanandroid, @Refusebid, @deleteproduct ",
 monochrome = true,
 plugin = "html:Reports/Cucumber",
 )

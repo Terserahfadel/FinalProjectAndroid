@@ -1,4 +1,4 @@
-@Register 
+@Register
 
 Feature: Register
 
